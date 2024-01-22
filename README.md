@@ -163,9 +163,9 @@ public class AppylarSample: MonoBehaviour, AppylarInitializationListener, Appyla
 
   private string GetAppKey() {
     if (Application.platform == RuntimePlatform.Android) {
-      return appKey = "jrctNFE1b-7IqHPShB-gKw";
+      return appKey = "<androidKey>";
     } else {
-      return appKey = "OwDmESooYtY2kNPotIuhiQ";
+      return appKey = "<iosKey>";
     }
   }
 ```
