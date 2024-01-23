@@ -1,5 +1,7 @@
 # Appylar Unity Wrapper 
 
+License: GPL
+
 Appylar Wrapper for use on both platforms ios and Android in Unity. It is a lightweight and easy-to-use Ad integration Wrapper provided by Appylar. Wrapper enables developers to integrate Appylar Ads in any type of Unity application.
 
 Appylar provides several types of Ads, enabling you to set Ads wherever you want in the Unity application. 
