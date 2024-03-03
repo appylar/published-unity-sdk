@@ -1,25 +1,30 @@
-namespace UnityEngine.AppylarSdkWrapper {
+namespace UnityEngine.AppylarSdkWrapper
+{
+    internal class AndroidAppylarInterstitialListener : AndroidJavaProxy
+    {
+        private const string CLASS_REFERENCE =
+            "com.appylar.android.sdk.interstitial.InterstitialListener";
+        private AppylarInterstitialListener m_ManagedListener;
 
-  internal class AndroidAppylarInterstitialListener: AndroidJavaProxy {
+        public AndroidAppylarInterstitialListener(AppylarInterstitialListener mListener)
+            : base(CLASS_REFERENCE)
+        {
+            m_ManagedListener = mListener;
+        }
 
-    private
-    const string CLASS_REFERENCE = "com.appylar.android.sdk.interstitial.InterstitialListener";
-    private AppylarInterstitialListener m_ManagedListener;
+        void onNoInterstitial()
+        {
+            m_ManagedListener?.onNoInterstitial();
+        }
 
-    public AndroidAppylarInterstitialListener(AppylarInterstitialListener mListener): base(CLASS_REFERENCE) {
-      m_ManagedListener = mListener;
+        void onInterstitialShown()
+        {
+            m_ManagedListener?.onInterstitialShown();
+        }
+
+        void onInterstitialClosed()
+        {
+            m_ManagedListener?.onInterstitialClosed();
+        }
     }
-
-    void onNoInterstitial() {
-      m_ManagedListener?.onNoInterstitial();
-    }
-
-    void onInterstitialShown() {
-      m_ManagedListener?.onInterstitialShown();
-    }
-
-    void onInterstitialClosed() {
-      m_ManagedListener?.onInterstitialClosed();
-    }
-  }
 }

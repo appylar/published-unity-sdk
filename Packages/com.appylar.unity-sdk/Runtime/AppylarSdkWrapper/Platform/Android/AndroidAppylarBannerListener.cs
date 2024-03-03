@@ -1,21 +1,25 @@
-namespace UnityEngine.AppylarSdkWrapper {
+namespace UnityEngine.AppylarSdkWrapper
+{
+    internal class AndroidAppylarBannerListener : AndroidJavaProxy
+    {
+        private const string CLASS_REFERENCE =
+            "com.appylar.android.sdk.bannerview.BannerViewListener";
+        private AppylarBannerListener m_ManagedListener;
 
-  internal class AndroidAppylarBannerListener: AndroidJavaProxy {
+        public AndroidAppylarBannerListener(AppylarBannerListener mListener)
+            : base(CLASS_REFERENCE)
+        {
+            m_ManagedListener = mListener;
+        }
 
-    private
-    const string CLASS_REFERENCE = "com.appylar.android.sdk.bannerview.BannerViewListener";
-    private AppylarBannerListener m_ManagedListener;
+        void onNoBanner()
+        {
+            m_ManagedListener?.onNoBanner();
+        }
 
-    public AndroidAppylarBannerListener(AppylarBannerListener mListener): base(CLASS_REFERENCE) {
-      m_ManagedListener = mListener;
+        void onBannerShown(int height)
+        {
+            m_ManagedListener?.onBannerShown(height);
+        }
     }
-
-    void onNoBanner() {
-      m_ManagedListener?.onNoBanner();
-    }
-    
-    void onBannerShown(int height) {
-      m_ManagedListener?.onBannerShown(height);
-    }
-  }
 }
