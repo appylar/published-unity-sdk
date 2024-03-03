@@ -1,15 +1,18 @@
-namespace UnityEngine.AppylarSdkWrapper {
-  /// <summary>
-  /// An enum representing AdType that app support.
-  /// </summary>
-  public enum AdType {
+namespace UnityEngine.AppylarSdkWrapper
+{
     /// <summary>
-    /// Banner AdType support
+    /// An enum representing AdType that app support.
     /// </summary>
-    BANNER,
-    /// <summary>
-    /// Interstitial AdType support
-    /// </summary>
-    INTERSTITIAL,
-  }
+    public enum AdType
+    {
+        /// <summary>
+        /// Banner AdType support
+        /// </summary>
+        BANNER,
+
+        /// <summary>
+        /// Interstitial AdType support
+        /// </summary>
+        INTERSTITIAL,
+    }
 }

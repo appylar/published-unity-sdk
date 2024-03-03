@@ -1,12 +1,11 @@
-namespace UnityEngine.AppylarSdkWrapper {
+namespace UnityEngine.AppylarSdkWrapper
+{
+    public interface AppylarInterstitialListener
+    {
+        void onNoInterstitial();
 
-  public interface AppylarInterstitialListener {
+        void onInterstitialShown();
 
-    void onNoInterstitial();
-
-    void onInterstitialShown();
-
-    void onInterstitialClosed();
-
-  }
+        void onInterstitialClosed();
+    }
 }

@@ -1,10 +1,9 @@
-namespace UnityEngine.AppylarSdkWrapper {
+namespace UnityEngine.AppylarSdkWrapper
+{
+    public interface AppylarInitializationListener
+    {
+        void onInitialized();
 
-  public interface AppylarInitializationListener {
-
-    void onInitialized();
-
-    void onError(string error);
-
-  }
+        void onError(string error);
+    }
 }
