@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/appylar/published-unity-sdk/compare/v1.0.1...v1.0.2) (2024-03-06)
+
+
+### Bug Fixes
+
+* use correct package.json path for semantic release ([#1](https://github.com/appylar/published-unity-sdk/issues/1)) ([d9adb52](https://github.com/appylar/published-unity-sdk/commit/d9adb52f6afdb9984beea23363f767457e92a835))
+
 ## [1.0.1](https://github.com/appylar/published-unity-sdk/compare/v1.0.0...v1.0.1) (2024-03-03)
 
 
