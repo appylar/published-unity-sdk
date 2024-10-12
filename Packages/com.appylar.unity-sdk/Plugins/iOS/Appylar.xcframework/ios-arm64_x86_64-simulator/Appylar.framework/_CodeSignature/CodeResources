@@ -6,55 +6,55 @@
 	<dict>
 		<key>Headers/Appylar-Swift.h</key>
 		<data>
-		v6OMmHL71aYRbl0qusn06gsdoXs=
+		pPJMB8Uy/AsaY6GEc1bva52QwJo=
 		</data>
 		<key>Headers/Appylar.h</key>
 		<data>
-		9zJUXw6wlYIYoE2iA3bMxGcM+Wk=
+		Mn09c3voMMbKyub6o9qCkjAd3S4=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		foR6ekDjx/j+lfroqbwbiKFZA5M=
+		dVVJ0OEqr+hwtIrLM4CTi2nWoPo=
 		</data>
 		<key>Modules/Appylar.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		5tcyj6OIOiiHV/rPgoRHJY5giB0=
+		6Iz9tDYE9uyLTtb6O0yoTWXVpQ4=
 		</data>
 		<key>Modules/Appylar.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		BFxXOeuuMsnZZV3HElyV4OBg1N4=
+		KiImMooKFhtylDXtNwYThoRz73E=
 		</data>
 		<key>Modules/Appylar.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		bQuWifd8DFy8CaXba28ZtsQAmM0=
+		pS8Ujb6oEPr6RRCmxsxMA4kBliE=
 		</data>
 		<key>Modules/Appylar.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		BFxXOeuuMsnZZV3HElyV4OBg1N4=
+		KiImMooKFhtylDXtNwYThoRz73E=
 		</data>
 		<key>Modules/Appylar.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		gwwy8dn3ItvM7reJ1Pmo9aL5f7I=
+		UwGVIToOWuxiMCzXeKfcepxQQ3M=
 		</data>
 		<key>Modules/Appylar.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		5tcyj6OIOiiHV/rPgoRHJY5giB0=
+		6Iz9tDYE9uyLTtb6O0yoTWXVpQ4=
 		</data>
 		<key>Modules/Appylar.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		4DTVVeAOvuEupvwJJz6ruAGN8Tw=
+		w/OrlEZBfOC4cQASP7Pjgimy/H0=
 		</data>
 		<key>Modules/Appylar.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		LvV/LeYuPQnb7W2o2GjvERIjXZE=
+		KBFSvc1FnPcmJlZWbxAYCOW+TOk=
 		</data>
 		<key>Modules/Appylar.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		4DTVVeAOvuEupvwJJz6ruAGN8Tw=
+		w/OrlEZBfOC4cQASP7Pjgimy/H0=
 		</data>
 		<key>Modules/Appylar.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		xSqywCAXuiqIAOKiOaociPMbvo4=
+		V8fuO6xvbGU5p49BHtRqaEdr9ls=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -67,84 +67,84 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SIgy4oNiavv0YTRYhUOXGvBiL47FM0kUx/FO4s97srU=
+			xqMrXTwqoCVat/dvtFCxsRiX7kIoa/AuV79VzeGW2FQ=
 			</data>
 		</dict>
 		<key>Headers/Appylar.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xLJ6ljHMA5SOD7Y4MiNavksV91o9YjsgwaTZKfgTeZw=
+			uH+Oj+fDqz96xpTGBCurB6yL2D3U0GFKx/3JTyZn06E=
 			</data>
 		</dict>
 		<key>Modules/Appylar.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lQuQxKO+XgNzdqJNqmrLmF6uPsmHz0xf/ZhtcRHcBJo=
+			VBAo+FHrsufHTzTC7bWzkE30Vr4DHrVdz7gDZC8wjSc=
 			</data>
 		</dict>
 		<key>Modules/Appylar.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tBYGLsfH+y6XlMA5kj9iWaSiwLLciVX+J4yv+1BWm54=
+			Q0kXtkYjTbcJm9qtL6/YQN7IDkqqG5JlV35bzVykDYw=
 			</data>
 		</dict>
 		<key>Modules/Appylar.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BL+D9pB8eGjtcBdu0/hEk9pYJUmVfgBsHYsRVJKWmwI=
+			QCwM/1WsbhNsHu8Hvit2WM3PXtbnMwZlnMzhRvpCVyQ=
 			</data>
 		</dict>
 		<key>Modules/Appylar.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tBYGLsfH+y6XlMA5kj9iWaSiwLLciVX+J4yv+1BWm54=
+			Q0kXtkYjTbcJm9qtL6/YQN7IDkqqG5JlV35bzVykDYw=
 			</data>
 		</dict>
 		<key>Modules/Appylar.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			reAWH2P3+loI8wiYGNnjMJyA5AevdT89WjXm7a0I3GA=
+			dGbe3z8aa5yX3YeQK7zRkzueIINAVmLr0iya2ATQhqc=
 			</data>
 		</dict>
 		<key>Modules/Appylar.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lQuQxKO+XgNzdqJNqmrLmF6uPsmHz0xf/ZhtcRHcBJo=
+			VBAo+FHrsufHTzTC7bWzkE30Vr4DHrVdz7gDZC8wjSc=
 			</data>
 		</dict>
 		<key>Modules/Appylar.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VcQDtiJS3veBSI+Ze5uNUolUPhSqYi2oXUw2+xUFnWA=
+			/EXKZZe8cYx0Ygy4NrS55MuoiaklmprPEuxnReK4eU0=
 			</data>
 		</dict>
 		<key>Modules/Appylar.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7gy8iBZnMrYzXyt/Ui7zez2nI/KvIpNxSq5a93/yyPY=
+			uMvfKjhAR6qdH1qgJG8LMrz63B+/KFxGvn3W2Ywmjj0=
 			</data>
 		</dict>
 		<key>Modules/Appylar.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VcQDtiJS3veBSI+Ze5uNUolUPhSqYi2oXUw2+xUFnWA=
+			/EXKZZe8cYx0Ygy4NrS55MuoiaklmprPEuxnReK4eU0=
 			</data>
 		</dict>
 		<key>Modules/Appylar.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TCgmoW1jb8fp/ypjfBlVfiV4aDImzQHyXZAuOaOSnQQ=
+			BC7PoGbHwqJiLVBJ5PcdE5tw0WJYgC/aNEAvwyTg0DQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
