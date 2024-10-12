@@ -9,10 +9,7 @@
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
-        "moduleName": "Appylar",
-        "declAttributes": [
-          "RawDocComment"
-        ]
+        "moduleName": "Appylar"
       },
       {
         "kind": "Import",
@@ -236,8 +233,7 @@
             "moduleName": "Appylar",
             "declAttributes": [
               "Custom",
-              "AccessControl",
-              "RawDocComment"
+              "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -428,8 +424,7 @@
               "Dynamic",
               "ObjC",
               "Custom",
-              "AccessControl",
-              "RawDocComment"
+              "AccessControl"
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
@@ -516,26 +511,71 @@
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
-        "moduleName": "Appylar",
-        "declAttributes": [
-          "RawDocComment"
-        ]
+        "moduleName": "Appylar"
       },
       {
         "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
-        "moduleName": "Appylar",
-        "declAttributes": [
-          "RawDocComment"
-        ]
+        "moduleName": "Appylar"
       },
       {
         "kind": "TypeDecl",
         "name": "Advertisement",
         "printedName": "Advertisement",
         "children": [
+          {
+            "kind": "Var",
+            "name": "description",
+            "printedName": "description",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Appylar@objc(cs)Advertisement(py)description",
+            "mangledName": "$s7Appylar13AdvertisementC11descriptionSSvp",
+            "moduleName": "Appylar",
+            "overriding": true,
+            "objc_name": "description",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl",
+              "Override"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Appylar@objc(cs)Advertisement(im)description",
+                "mangledName": "$s7Appylar13AdvertisementC11descriptionSSvg",
+                "moduleName": "Appylar",
+                "overriding": true,
+                "objc_name": "description",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
           {
             "kind": "Constructor",
             "name": "init",
@@ -633,30 +673,70 @@
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
+        "moduleName": "Appylar"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Appylar"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "LogUtil",
+        "printedName": "LogUtil",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "printLog",
+            "printedName": "printLog(message:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ProtocolComposition",
+                "printedName": "Any"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7Appylar7LogUtilC05printB07messageyyp_tFZ",
+            "mangledName": "$s7Appylar7LogUtilC05printB07messageyyp_tFZ",
+            "moduleName": "Appylar",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:7Appylar7LogUtilC",
+        "mangledName": "$s7Appylar7LogUtilC",
         "moduleName": "Appylar",
         "declAttributes": [
-          "RawDocComment"
-        ]
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
       },
       {
         "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
-        "moduleName": "Appylar",
-        "declAttributes": [
-          "RawDocComment"
-        ]
+        "moduleName": "Appylar"
       },
       {
         "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
-        "moduleName": "Appylar",
-        "declAttributes": [
-          "RawDocComment"
-        ]
+        "moduleName": "Appylar"
       },
       {
         "kind": "Import",
@@ -678,107 +758,6 @@
         "printedName": "AppylarManager",
         "children": [
           {
-            "kind": "Var",
-            "name": "supportedOrientation",
-            "printedName": "supportedOrientation",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "UIInterfaceOrientationMask",
-                "printedName": "UIKit.UIInterfaceOrientationMask",
-                "usr": "c:@E@UIInterfaceOrientationMask"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:7Appylar0A7ManagerC20supportedOrientationSo011UIInterfaceD4MaskVvpZ",
-            "mangledName": "$s7Appylar0A7ManagerC20supportedOrientationSo011UIInterfaceD4MaskVvpZ",
-            "moduleName": "Appylar",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIInterfaceOrientationMask",
-                    "printedName": "UIKit.UIInterfaceOrientationMask",
-                    "usr": "c:@E@UIInterfaceOrientationMask"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7Appylar0A7ManagerC20supportedOrientationSo011UIInterfaceD4MaskVvgZ",
-                "mangledName": "$s7Appylar0A7ManagerC20supportedOrientationSo011UIInterfaceD4MaskVvgZ",
-                "moduleName": "Appylar",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIInterfaceOrientationMask",
-                    "printedName": "UIKit.UIInterfaceOrientationMask",
-                    "usr": "c:@E@UIInterfaceOrientationMask"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7Appylar0A7ManagerC20supportedOrientationSo011UIInterfaceD4MaskVvsZ",
-                "mangledName": "$s7Appylar0A7ManagerC20supportedOrientationSo011UIInterfaceD4MaskVvsZ",
-                "moduleName": "Appylar",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7Appylar0A7ManagerC20supportedOrientationSo011UIInterfaceD4MaskVvMZ",
-                "mangledName": "$s7Appylar0A7ManagerC20supportedOrientationSo011UIInterfaceD4MaskVvMZ",
-                "moduleName": "Appylar",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
             "kind": "Function",
             "name": "setEventListener",
             "printedName": "setEventListener(delegate:bannerDelegate:interstitialDelegate:)",
@@ -791,18 +770,18 @@
               {
                 "kind": "TypeNominal",
                 "name": "AppylarDelegate",
-                "printedName": "Appylar.AppylarDelegate",
+                "printedName": "any Appylar.AppylarDelegate",
                 "usr": "s:7Appylar0A8DelegateP"
               },
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Appylar.BannerViewDelegate?",
+                "printedName": "(any Appylar.BannerViewDelegate)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "BannerViewDelegate",
-                    "printedName": "Appylar.BannerViewDelegate",
+                    "printedName": "any Appylar.BannerViewDelegate",
                     "usr": "s:7Appylar18BannerViewDelegateP"
                   }
                 ],
@@ -812,12 +791,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Appylar.InterstitialDelegate?",
+                "printedName": "(any Appylar.InterstitialDelegate)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "InterstitialDelegate",
-                    "printedName": "Appylar.InterstitialDelegate",
+                    "printedName": "any Appylar.InterstitialDelegate",
                     "usr": "s:7Appylar20InterstitialDelegateP"
                   }
                 ],
@@ -880,8 +859,7 @@
             "static": true,
             "declAttributes": [
               "Final",
-              "AccessControl",
-              "RawDocComment"
+              "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -897,50 +875,57 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Dictionary",
-                "printedName": "[Swift.String : [Swift.String]?]",
+                "name": "Optional",
+                "printedName": "[Swift.String : [Swift.String]?]?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "[Swift.String]?",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : [Swift.String]?]",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Array",
-                        "printedName": "[Swift.String]",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "[Swift.String]?",
                         "children": [
                           {
                             "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
+                            "name": "Array",
+                            "printedName": "[Swift.String]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ],
+                            "usr": "s:Sa"
                           }
                         ],
-                        "usr": "s:Sa"
+                        "usr": "s:Sq"
                       }
                     ],
-                    "usr": "s:Sq"
+                    "usr": "s:SD"
                   }
                 ],
-                "usr": "s:SD"
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:7Appylar0A7ManagerC13setParameters4dictySDySSSaySSGSgG_tFZ",
-            "mangledName": "$s7Appylar0A7ManagerC13setParameters4dictySDySSSaySSGSgG_tFZ",
+            "usr": "s:7Appylar0A7ManagerC13setParameters4dictySDySSSaySSGSgGSg_tFZ",
+            "mangledName": "$s7Appylar0A7ManagerC13setParameters4dictySDySSSaySSGSgGSg_tFZ",
             "moduleName": "Appylar",
             "static": true,
             "declAttributes": [
               "Final",
-              "AccessControl",
-              "RawDocComment"
+              "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
           }
@@ -950,8 +935,7 @@
         "mangledName": "$s7Appylar0A7ManagerC",
         "moduleName": "Appylar",
         "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
+          "AccessControl"
         ],
         "hasMissingDesignatedInitializers": true
       },
@@ -960,10 +944,7 @@
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
-        "moduleName": "Appylar",
-        "declAttributes": [
-          "RawDocComment"
-        ]
+        "moduleName": "Appylar"
       },
       {
         "kind": "TypeDecl",
@@ -1045,6 +1026,39 @@
             "moduleName": "Appylar"
           },
           {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Appylar.AdOrientation?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdOrientation",
+                    "printedName": "Appylar.AdOrientation",
+                    "usr": "s:7Appylar13AdOrientationO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7Appylar13AdOrientationO8rawValueACSgSS_tcfc",
+            "mangledName": "$s7Appylar13AdOrientationO8rawValueACSgSS_tcfc",
+            "moduleName": "Appylar",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
             "kind": "Var",
             "name": "rawValue",
             "printedName": "rawValue",
@@ -1082,39 +1096,6 @@
                 "accessorKind": "get"
               }
             ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(rawValue:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Appylar.AdOrientation?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AdOrientation",
-                    "printedName": "Appylar.AdOrientation",
-                    "usr": "s:7Appylar13AdOrientationO"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:7Appylar13AdOrientationO8rawValueACSgSS_tcfc",
-            "mangledName": "$s7Appylar13AdOrientationO8rawValueACSgSS_tcfc",
-            "moduleName": "Appylar",
-            "implicit": true,
-            "init_kind": "Designated"
           }
         ],
         "declKind": "Enum",
@@ -1169,10 +1150,7 @@
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
-        "moduleName": "Appylar",
-        "declAttributes": [
-          "RawDocComment"
-        ]
+        "moduleName": "Appylar"
       },
       {
         "kind": "TypeDecl",
@@ -1429,106 +1407,6 @@
           },
           {
             "kind": "Var",
-            "name": "printLog",
-            "printedName": "printLog",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:7Appylar7SessionC8printLogSbvpZ",
-            "mangledName": "$s7Appylar7SessionC8printLogSbvpZ",
-            "moduleName": "Appylar",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7Appylar7SessionC8printLogSbvgZ",
-                "mangledName": "$s7Appylar7SessionC8printLogSbvgZ",
-                "moduleName": "Appylar",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7Appylar7SessionC8printLogSbvsZ",
-                "mangledName": "$s7Appylar7SessionC8printLogSbvsZ",
-                "moduleName": "Appylar",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7Appylar7SessionC8printLogSbvMZ",
-                "mangledName": "$s7Appylar7SessionC8printLogSbvMZ",
-                "moduleName": "Appylar",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "isInterstitialShown",
             "printedName": "isInterstitialShown",
             "children": [
@@ -1642,10 +1520,7 @@
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
-        "moduleName": "Appylar",
-        "declAttributes": [
-          "RawDocComment"
-        ]
+        "moduleName": "Appylar"
       },
       {
         "kind": "TypeDecl",
@@ -1727,6 +1602,39 @@
             "moduleName": "Appylar"
           },
           {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Appylar.AdType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdType",
+                    "printedName": "Appylar.AdType",
+                    "usr": "s:7Appylar6AdTypeO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7Appylar6AdTypeO8rawValueACSgSS_tcfc",
+            "mangledName": "$s7Appylar6AdTypeO8rawValueACSgSS_tcfc",
+            "moduleName": "Appylar",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
             "kind": "Var",
             "name": "rawValue",
             "printedName": "rawValue",
@@ -1764,39 +1672,6 @@
                 "accessorKind": "get"
               }
             ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(rawValue:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Appylar.AdType?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AdType",
-                    "printedName": "Appylar.AdType",
-                    "usr": "s:7Appylar6AdTypeO"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:7Appylar6AdTypeO8rawValueACSgSS_tcfc",
-            "mangledName": "$s7Appylar6AdTypeO8rawValueACSgSS_tcfc",
-            "moduleName": "Appylar",
-            "implicit": true,
-            "init_kind": "Designated"
           }
         ],
         "declKind": "Enum",
@@ -1851,30 +1726,21 @@
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
-        "moduleName": "Appylar",
-        "declAttributes": [
-          "RawDocComment"
-        ]
+        "moduleName": "Appylar"
       },
       {
         "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
-        "moduleName": "Appylar",
-        "declAttributes": [
-          "RawDocComment"
-        ]
+        "moduleName": "Appylar"
       },
       {
         "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
-        "moduleName": "Appylar",
-        "declAttributes": [
-          "RawDocComment"
-        ]
+        "moduleName": "Appylar"
       },
       {
         "kind": "TypeDecl",
@@ -1968,17 +1834,23 @@
           {
             "kind": "Function",
             "name": "onBannerShown",
-            "printedName": "onBannerShown()",
+            "printedName": "onBannerShown(_:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
               }
             ],
             "declKind": "Func",
-            "usr": "s:7Appylar18BannerViewDelegateP02onB5ShownyyF",
-            "mangledName": "$s7Appylar18BannerViewDelegateP02onB5ShownyyF",
+            "usr": "s:7Appylar18BannerViewDelegateP02onB5ShownyySiF",
+            "mangledName": "$s7Appylar18BannerViewDelegateP02onB5ShownyySiF",
             "moduleName": "Appylar",
             "genericSig": "<τ_0_0 where τ_0_0 : Appylar.BannerViewDelegate>",
             "sugared_genericSig": "<Self where Self : Appylar.BannerViewDelegate>",
@@ -2077,10 +1949,7 @@
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
-        "moduleName": "Appylar",
-        "declAttributes": [
-          "RawDocComment"
-        ]
+        "moduleName": "Appylar"
       },
       {
         "kind": "Import",
@@ -2125,6 +1994,32 @@
           },
           {
             "kind": "Function",
+            "name": "didMoveToSuperview",
+            "printedName": "didMoveToSuperview()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Appylar@objc(cs)BannerView(im)didMoveToSuperview",
+            "mangledName": "$s7Appylar10BannerViewC18didMoveToSuperviewyyF",
+            "moduleName": "Appylar",
+            "overriding": true,
+            "objc_name": "didMoveToSuperview",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl",
+              "Override"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "showAd",
             "printedName": "showAd(placement:)",
             "children": [
@@ -2155,34 +2050,7 @@
             "moduleName": "Appylar",
             "declAttributes": [
               "Custom",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "didMoveToSuperview",
-            "printedName": "didMoveToSuperview()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@Appylar@objc(cs)BannerView(im)didMoveToSuperview",
-            "mangledName": "$s7Appylar10BannerViewC18didMoveToSuperviewyyF",
-            "moduleName": "Appylar",
-            "overriding": true,
-            "objc_name": "didMoveToSuperview",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Custom",
-              "AccessControl",
-              "Override"
+              "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -2203,8 +2071,7 @@
             "moduleName": "Appylar",
             "declAttributes": [
               "Custom",
-              "AccessControl",
-              "RawDocComment"
+              "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -2322,6 +2189,51 @@
           {
             "kind": "Function",
             "name": "webView",
+            "printedName": "webView(_:didFinish:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKWebView",
+                "printedName": "WebKit.WKWebView",
+                "usr": "c:objc(cs)WKWebView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ImplicitlyUnwrappedOptional",
+                "printedName": "WebKit.WKNavigation?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WKNavigation",
+                    "printedName": "WebKit.WKNavigation",
+                    "usr": "c:objc(cs)WKNavigation"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@Appylar@objc(cs)BannerView(im)webView:didFinishNavigation:",
+            "mangledName": "$s7Appylar10BannerViewC03webC0_9didFinishySo05WKWebC0C_So12WKNavigationCSgtF",
+            "moduleName": "Appylar",
+            "objc_name": "webView:didFinishNavigation:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "webView",
             "printedName": "webView(_:createWebViewWith:for:windowFeatures:)",
             "children": [
               {
@@ -2372,48 +2284,6 @@
               "Dynamic",
               "ObjC",
               "Custom",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "traitCollectionDidChange",
-            "printedName": "traitCollectionDidChange(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "UIKit.UITraitCollection?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UITraitCollection",
-                    "printedName": "UIKit.UITraitCollection",
-                    "usr": "c:objc(cs)UITraitCollection"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@Appylar@objc(cs)BannerView(im)traitCollectionDidChange:",
-            "mangledName": "$s7Appylar10BannerViewC24traitCollectionDidChangeyySo07UITraitE0CSgF",
-            "moduleName": "Appylar",
-            "overriding": true,
-            "objc_name": "traitCollectionDidChange:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Custom",
-              "Override",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -2514,2280 +2384,513 @@
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
-        "moduleName": "Appylar",
-        "declAttributes": [
-          "RawDocComment"
-        ]
+        "moduleName": "Appylar"
       }
     ],
     "json_format_version": 8
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/InterstitialViewController.swift",
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Views\/InterstitialViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 404,
+      "offset": 391,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/InterstitialViewController.swift",
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Views\/InterstitialViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 348,
+      "offset": 335,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/InterstitialViewController.swift",
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Helper\/LogUtil.swift",
       "kind": "BooleanLiteral",
-      "offset": 1544,
+      "offset": 74,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/InterstitialViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1639,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/InterstitialViewController.swift",
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/ApiServices\/ApiManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2164,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/InterstitialViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2187,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/InterstitialViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2236,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/InterstitialViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2438,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/InterstitialViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2473,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/InterstitialViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 2529,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/InterstitialViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2713,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/InterstitialViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2774,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/InterstitialViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2995,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/InterstitialViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3179,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/InterstitialViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3206,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/InterstitialViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3334,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/InterstitialViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3523,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/InterstitialViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3736,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/InterstitialViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4010,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/InterstitialViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 4107,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/InterstitialViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4396,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/InterstitialViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 4744,
-      "length": 44,
-      "value": "\"var meta = document.createElement('meta');\""
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/InterstitialViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 4799,
-      "length": 25,
-      "value": "\"meta.name = 'viewport';\""
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/InterstitialViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 4835,
-      "length": 94,
-      "value": "\"meta.content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no';\""
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/InterstitialViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 4940,
-      "length": 54,
-      "value": "\"var head = document.getElementsByTagName('head')[0];\""
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/InterstitialViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 5005,
-      "length": 25,
-      "value": "\"head.appendChild(meta);\""
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/InterstitialViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5144,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/InterstitialViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 5403,
-      "length": 8,
-      "value": "\"closed\""
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/InterstitialViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5523,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/InterstitialViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5636,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/InterstitialViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5801,
-      "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/InterstitialViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5867,
-      "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/InterstitialViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5922,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/InterstitialViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 6220,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/InterstitialViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 6276,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/InterstitialViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 6373,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/InterstitialViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 6429,
-      "length": 2,
-      "value": "51"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/InterstitialViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 6432,
-      "length": 3,
-      "value": "255"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/InterstitialViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 6444,
-      "length": 2,
-      "value": "51"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/InterstitialViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 6447,
-      "length": 3,
-      "value": "255"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/InterstitialViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 6458,
-      "length": 2,
-      "value": "51"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/InterstitialViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 6461,
-      "length": 3,
-      "value": "255"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/InterstitialViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 6472,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/InterstitialViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 6575,
-      "length": 13,
-      "value": "\"%PLACEMENT%\""
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/InterstitialViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 6671,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/InterstitialViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 7080,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/InterstitialViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 7417,
-      "length": 8,
-      "value": "\"closed\""
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/InterstitialViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 7499,
-      "length": 8,
-      "value": "\"closed\""
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/InterstitialViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 7773,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/InterstitialViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 7802,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/InterstitialViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 8293,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/InterstitialViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 8506,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Ads\/Advertisement.swift",
-      "kind": "IntegerLiteral",
-      "offset": 271,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Ads\/Advertisement.swift",
-      "kind": "IntegerLiteral",
-      "offset": 275,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Ads\/Advertisement.swift",
-      "kind": "BooleanLiteral",
-      "offset": 298,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Ads\/Advertisement.swift",
-      "kind": "BooleanLiteral",
-      "offset": 340,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Ads\/Advertisement.swift",
-      "kind": "StringLiteral",
-      "offset": 479,
-      "length": 28,
-      "value": "\"yyyy-MM-dd'T'HH:mm:ss.SSSZ\""
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Ads\/Advertisement.swift",
-      "kind": "StringLiteral",
-      "offset": 570,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Ads\/Advertisement.swift",
-      "kind": "IntegerLiteral",
-      "offset": 641,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Ads\/Advertisement.swift",
-      "kind": "BooleanLiteral",
-      "offset": 739,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/ApiServices\/ApiManager.swift",
-      "kind": "StringLiteral",
-      "offset": 678,
-      "length": 19,
-      "value": "\"com.appylarios.io\""
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/ApiServices\/ApiManager.swift",
-      "kind": "StringLiteral",
-      "offset": 716,
-      "length": 28,
-      "value": "\"CFBundleShortVersionString\""
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/ApiServices\/ApiManager.swift",
-      "kind": "StringLiteral",
-      "offset": 761,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/ApiServices\/ApiManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 910,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/ApiServices\/ApiManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 959,
+      "offset": 87,
       "length": 2,
       "value": "45"
     },
     {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/ApiServices\/ApiManager.swift",
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Core\/AppylarManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 410,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Enumerations\/AdOrientation.swift",
+      "kind": "StringLiteral",
+      "offset": 76,
+      "length": 10,
+      "value": "\"portrait\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Enumerations\/AdOrientation.swift",
+      "kind": "StringLiteral",
+      "offset": 108,
+      "length": 11,
+      "value": "\"landscape\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Enumerations\/AdOrientation.swift",
+      "kind": "StringLiteral",
+      "offset": 76,
+      "length": 10,
+      "value": "\"portrait\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Enumerations\/AdOrientation.swift",
+      "kind": "StringLiteral",
+      "offset": 108,
+      "length": 11,
+      "value": "\"landscape\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Core\/Session.swift",
+      "kind": "StringLiteral",
+      "offset": 125,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Core\/Session.swift",
+      "kind": "StringLiteral",
+      "offset": 160,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Core\/Session.swift",
+      "kind": "StringLiteral",
+      "offset": 195,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Core\/Session.swift",
+      "kind": "BooleanLiteral",
+      "offset": 224,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Core\/Session.swift",
       "kind": "Array",
-      "offset": 1191,
+      "offset": 273,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/ApiServices\/ApiManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1220,
-      "length": 18,
-      "value": "\"application\/json\""
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/ApiServices\/ApiManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1260,
-      "length": 14,
-      "value": "\"Content-Type\""
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/ApiServices\/ApiManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1302,
-      "length": 9,
-      "value": "\"Bearer \""
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/ApiServices\/ApiManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1356,
-      "length": 15,
-      "value": "\"Authorization\""
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/ApiServices\/ApiManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1399,
-      "length": 14,
-      "value": "\"Appylar iOS\/\""
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/ApiServices\/ApiManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1445,
-      "length": 12,
-      "value": "\"User-Agent\""
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/ApiServices\/ApiManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1493,
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Core\/Session.swift",
+      "kind": "Array",
+      "offset": 331,
       "length": 2,
-      "value": "45"
+      "value": "[]"
     },
     {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/ApiServices\/ApiManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1868,
-      "length": 5,
-      "value": "-1001"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/ApiServices\/ApiManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2279,
-      "length": 5,
-      "value": "-1009"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/ApiServices\/ApiManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2560,
-      "length": 3,
-      "value": "200"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/ApiServices\/ApiManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3107,
-      "length": 3,
-      "value": "429"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/ApiServices\/ApiManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4036,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/ApiServices\/ApiManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4048,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/ApiServices\/ApiManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4139,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/ApiServices\/ApiManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4219,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/ApiServices\/ApiManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5023,
-      "length": 3,
-      "value": "401"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/ApiServices\/ApiManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5648,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/ApiServices\/ApiManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5717,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/ApiServices\/ApiManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5782,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/ApiServices\/ApiManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5957,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/ApiServices\/ApiManager.swift",
-      "kind": "StringLiteral",
-      "offset": 6552,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/ApiServices\/ApiManager.swift",
-      "kind": "StringLiteral",
-      "offset": 7608,
-      "length": 4,
-      "value": "\"en\""
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/ApiServices\/ApiManager.swift",
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Core\/Session.swift",
       "kind": "FloatLiteral",
-      "offset": 8161,
-      "length": 3,
-      "value": "0.5"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/ApiServices\/ApiManager.swift",
-      "kind": "StringLiteral",
-      "offset": 8530,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/ApiServices\/ApiManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 9065,
-      "length": 3,
-      "value": "403"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/ApiServices\/ApiManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 9946,
-      "length": 3,
-      "value": "400"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/ApiServices\/ApiManager.swift",
-      "kind": "StringLiteral",
-      "offset": 10419,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/ApiServices\/ApiManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 10738,
-      "length": 3,
-      "value": "500"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/ApiServices\/ApiManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 11110,
-      "length": 1,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/ApiServices\/ApiManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 11147,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/ApiServices\/ApiManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 11223,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/ApiServices\/ApiManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 12666,
-      "length": 2,
-      "value": "30"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/ApiServices\/ApiManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 12916,
-      "length": 2,
-      "value": "30"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/ApiServices\/ApiManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 13785,
-      "length": 3,
-      "value": "429"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/ApiServices\/ApiManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 13824,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/ApiServices\/ApiManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 14439,
-      "length": 3,
-      "value": "200"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/ApiServices\/ApiManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 14599,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/ApiServices\/ApiManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 15508,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/ApiServices\/ApiManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 15598,
-      "length": 2,
-      "value": "30"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/ApiServices\/ApiManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 15611,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/ApiServices\/ApiManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 15820,
-      "length": 3,
-      "value": "403"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/ApiServices\/ApiManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 16722,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/ApiServices\/ApiManager.swift",
-      "kind": "StringLiteral",
-      "offset": 16794,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/ApiServices\/ApiManager.swift",
-      "kind": "StringLiteral",
-      "offset": 16865,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/ApiServices\/ApiManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 16954,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/ApiServices\/ApiManager.swift",
-      "kind": "Dictionary",
-      "offset": 17047,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/ApiServices\/ApiManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 17092,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/ApiServices\/ApiManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 17281,
-      "length": 3,
-      "value": "200"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/ApiServices\/ApiManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 17334,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/ApiServices\/ApiManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 17825,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/ApiServices\/ApiManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 18058,
-      "length": 3,
-      "value": "500"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/ApiServices\/ApiManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 18184,
-      "length": 2,
-      "value": "30"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/ApiServices\/ApiManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 18354,
-      "length": 3,
-      "value": "429"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/ApiServices\/ApiManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 18672,
-      "length": 5,
-      "value": "-1001"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/ApiServices\/ApiManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 18800,
-      "length": 2,
-      "value": "30"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Core\/AppylarManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1536,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Core\/AppylarManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1642,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Core\/AppylarManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1686,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Core\/AppylarManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1953,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Core\/AppylarManager.swift",
-      "kind": "StringLiteral",
-      "offset": 2589,
-      "length": 4,
-      "value": "\"en\""
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Core\/AppylarManager.swift",
-      "kind": "Array",
-      "offset": 2859,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Core\/AppylarManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3073,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Core\/AppylarManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3295,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Core\/AppylarManager.swift",
-      "kind": "Dictionary",
-      "offset": 3314,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Core\/AppylarManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3443,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Core\/AppylarManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3498,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Core\/AppylarManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3575,
-      "length": 2,
-      "value": "30"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Core\/AppylarManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3639,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Core\/AppylarManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3946,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Core\/AppylarManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3973,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Core\/AppylarManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4004,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Core\/AppylarManager.swift",
-      "kind": "StringLiteral",
-      "offset": 4115,
-      "length": 83,
-      "value": "\"{\"error\": \""
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Core\/AppylarManager.swift",
-      "kind": "StringLiteral",
-      "offset": 4153,
-      "length": 1,
-      "value": "\", \"message\": \"\""
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Core\/AppylarManager.swift",
-      "kind": "StringLiteral",
-      "offset": 4194,
-      "length": 1,
-      "value": "\"\"}\""
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Core\/AppylarManager.swift",
-      "kind": "StringLiteral",
-      "offset": 4309,
-      "length": 84,
-      "value": "\"{\"error\": \""
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Core\/AppylarManager.swift",
-      "kind": "StringLiteral",
-      "offset": 4347,
-      "length": 1,
-      "value": "\", \"message\": \"\""
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Core\/AppylarManager.swift",
-      "kind": "StringLiteral",
-      "offset": 4388,
-      "length": 1,
-      "value": "\" \"}\""
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Core\/AppylarManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4436,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Core\/AppylarManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5004,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Core\/AppylarManager.swift",
-      "kind": "Dictionary",
-      "offset": 5024,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Core\/AppylarManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5372,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Core\/AppylarManager.swift",
-      "kind": "StringLiteral",
-      "offset": 7275,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Core\/AppylarManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8432,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Core\/AppylarManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8680,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Core\/AppylarManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8934,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Core\/AppylarManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 8980,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Core\/AppylarManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 9600,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Core\/AppylarManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 9628,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Core\/AppylarManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 9813,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Core\/AppylarManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 10062,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Core\/AppylarManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 10090,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Core\/AppylarManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 10275,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Core\/AppylarManager.swift",
-      "kind": "StringLiteral",
-      "offset": 10715,
-      "length": 5,
-      "value": "\"UTC\""
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Core\/AppylarManager.swift",
-      "kind": "StringLiteral",
-      "offset": 10757,
-      "length": 28,
-      "value": "\"yyyy-MM-dd'T'HH:mm:ss.SSSZ\""
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Core\/AppylarManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 11095,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Core\/AppylarManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 12430,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Core\/AppylarManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 12550,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Core\/AppylarManager.swift",
-      "kind": "Array",
-      "offset": 12614,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Core\/AppylarManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 12714,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Enumerations\/AdOrientation.swift",
-      "kind": "StringLiteral",
-      "offset": 170,
-      "length": 10,
-      "value": "\"portrait\""
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Enumerations\/AdOrientation.swift",
-      "kind": "StringLiteral",
-      "offset": 202,
-      "length": 11,
-      "value": "\"landscape\""
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Enumerations\/AdOrientation.swift",
-      "kind": "StringLiteral",
-      "offset": 170,
-      "length": 10,
-      "value": "\"portrait\""
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Enumerations\/AdOrientation.swift",
-      "kind": "StringLiteral",
-      "offset": 202,
-      "length": 11,
-      "value": "\"landscape\""
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Core\/Session.swift",
-      "kind": "StringLiteral",
-      "offset": 221,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Core\/Session.swift",
-      "kind": "StringLiteral",
-      "offset": 256,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Core\/Session.swift",
-      "kind": "StringLiteral",
-      "offset": 291,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Core\/Session.swift",
-      "kind": "BooleanLiteral",
-      "offset": 320,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Core\/Session.swift",
-      "kind": "Array",
       "offset": 368,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Core\/Session.swift",
-      "kind": "Array",
-      "offset": 426,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Core\/Session.swift",
-      "kind": "FloatLiteral",
-      "offset": 463,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Core\/Session.swift",
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Core\/Session.swift",
       "kind": "IntegerLiteral",
-      "offset": 503,
+      "offset": 408,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Core\/Session.swift",
-      "kind": "BooleanLiteral",
-      "offset": 538,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Core\/Session.swift",
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Core\/Session.swift",
       "kind": "IntegerLiteral",
-      "offset": 570,
+      "offset": 436,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Core\/Session.swift",
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Core\/Session.swift",
       "kind": "IntegerLiteral",
-      "offset": 667,
+      "offset": 486,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Core\/Session.swift",
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Core\/Session.swift",
       "kind": "BooleanLiteral",
-      "offset": 709,
+      "offset": 526,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Core\/Session.swift",
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Core\/Session.swift",
       "kind": "BooleanLiteral",
-      "offset": 752,
+      "offset": 569,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Core\/Session.swift",
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Core\/Session.swift",
       "kind": "BooleanLiteral",
-      "offset": 808,
+      "offset": 625,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Core\/Session.swift",
-      "kind": "BooleanLiteral",
-      "offset": 851,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Core\/Session.swift",
-      "kind": "IntegerLiteral",
-      "offset": 887,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Core\/Session.swift",
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Enumerations\/AdType.swift",
       "kind": "StringLiteral",
-      "offset": 1521,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Core\/Session.swift",
-      "kind": "StringLiteral",
-      "offset": 1548,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Core\/Session.swift",
-      "kind": "StringLiteral",
-      "offset": 1576,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Core\/Session.swift",
-      "kind": "Array",
-      "offset": 1605,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Core\/Session.swift",
-      "kind": "Array",
-      "offset": 1639,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Core\/Session.swift",
-      "kind": "FloatLiteral",
-      "offset": 1677,
-      "length": 3,
-      "value": "0.0"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Enumerations\/AdType.swift",
-      "kind": "StringLiteral",
-      "offset": 154,
+      "offset": 67,
       "length": 8,
       "value": "\"banner\""
     },
     {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Enumerations\/AdType.swift",
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Enumerations\/AdType.swift",
       "kind": "StringLiteral",
-      "offset": 187,
+      "offset": 100,
       "length": 14,
       "value": "\"interstitial\""
     },
     {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Enumerations\/AdType.swift",
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Enumerations\/AdType.swift",
       "kind": "StringLiteral",
-      "offset": 154,
+      "offset": 67,
       "length": 8,
       "value": "\"banner\""
     },
     {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Enumerations\/AdType.swift",
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Enumerations\/AdType.swift",
       "kind": "StringLiteral",
-      "offset": 187,
+      "offset": 100,
       "length": 14,
       "value": "\"interstitial\""
     },
     {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 178,
+      "offset": 85,
       "length": 25,
       "value": "\"https:\/\/www.appylar.com\""
     },
     {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 233,
+      "offset": 140,
       "length": 18,
       "value": "\"\/api\/v1\/content\/\""
     },
     {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 282,
+      "offset": 189,
       "length": 16,
       "value": "\"\/api\/v1\/error\/\""
     },
     {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 335,
+      "offset": 242,
       "length": 18,
       "value": "\"\/api\/v1\/session\/\""
     },
     {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 410,
+      "offset": 317,
       "length": 7,
       "value": "\"width\""
     },
     {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 443,
+      "offset": 350,
       "length": 9,
       "value": "\"density\""
     },
     {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 477,
+      "offset": 384,
       "length": 8,
       "value": "\"height\""
     },
     {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 511,
+      "offset": 418,
       "length": 9,
       "value": "\"country\""
     },
     {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 547,
+      "offset": 454,
       "length": 10,
       "value": "\"language\""
     },
     {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 582,
+      "offset": 489,
       "length": 9,
       "value": "\"app_key\""
     },
     {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 615,
+      "offset": 522,
       "length": 8,
       "value": "\"app_id\""
     },
     {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 650,
+      "offset": 557,
       "length": 11,
       "value": "\"test_mode\""
     },
     {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 692,
+      "offset": 599,
       "length": 14,
       "value": "\"orientations\""
     },
     {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 737,
+      "offset": 644,
       "length": 15,
       "value": "\"session_token\""
     },
     {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 787,
+      "offset": 694,
       "length": 19,
       "value": "\"rotation_interval\""
     },
     {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 837,
+      "offset": 744,
       "length": 15,
       "value": "\"buffer_limits\""
     },
     {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 874,
+      "offset": 781,
       "length": 5,
       "value": "\"min\""
     },
     {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 903,
+      "offset": 810,
       "length": 7,
       "value": "\"error\""
     },
     {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 944,
+      "offset": 851,
       "length": 18,
       "value": "\"extra_parameters\""
     },
     {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 993,
+      "offset": 900,
       "length": 14,
       "value": "\"combinations\""
     },
     {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1031,
+      "offset": 938,
       "length": 7,
       "value": "\"scale\""
     },
     {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1061,
+      "offset": 968,
       "length": 6,
       "value": "\"type\""
     },
     {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1092,
+      "offset": 999,
       "length": 8,
       "value": "\"result\""
     },
     {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1121,
+      "offset": 1028,
       "length": 4,
       "value": "\"ad\""
     },
     {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1155,
+      "offset": 1062,
       "length": 13,
       "value": "\"orientation\""
     },
     {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1196,
+      "offset": 1103,
       "length": 12,
       "value": "\"expires_at\""
     },
     {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1231,
+      "offset": 1138,
       "length": 6,
       "value": "\"html\""
     },
     {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1259,
+      "offset": 1166,
       "length": 5,
       "value": "\"url\""
     },
     {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1293,
+      "offset": 1200,
       "length": 12,
       "value": "\"statusCode\""
     },
     {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1346,
+      "offset": 1253,
       "length": 24,
       "value": "\"adRetrieveNotification\""
     },
     {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1400,
-      "length": 28,
-      "value": "\"You didn't provide App-key\""
+      "offset": 1307,
+      "length": 31,
+      "value": "\"You didn't provide an app key\""
     },
     {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1463,
+      "offset": 1373,
       "length": 35,
-      "value": "\"You didn't provide an Orientation\""
+      "value": "\"You didn't provide an orientation\""
     },
     {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1528,
-      "length": 28,
-      "value": "\"You didn't provide Ad-Type\""
+      "offset": 1438,
+      "length": 31,
+      "value": "\"You didn't provide an ad type\""
     },
     {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1618,
+      "offset": 1531,
       "length": 18,
       "value": "\"err_rate_limited\""
     },
     {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1672,
+      "offset": 1585,
       "length": 18,
       "value": "\"err_unauthorized\""
     },
     {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1723,
+      "offset": 1636,
       "length": 15,
       "value": "\"err_forbidden\""
     },
     {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1761,
+      "offset": 1674,
       "length": 6,
       "value": "\"wait\""
     },
     {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1798,
+      "offset": 1711,
       "length": 18,
       "value": "\"err_invalid_data\""
     },
     {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Extensions\/UIView.swift",
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Views\/BannerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1115,
+      "offset": 352,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Views\/BannerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 342,
+      "offset": 296,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Views\/BannerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 383,
+      "offset": 576,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Views\/BannerView.swift",
       "kind": "StringLiteral",
-      "offset": 404,
+      "offset": 597,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Views\/BannerView.swift",
       "kind": "StringLiteral",
-      "offset": 455,
+      "offset": 648,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Views\/BannerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 512,
+      "offset": 709,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 629,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 659,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 757,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 781,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 822,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1102,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1144,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1180,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1233,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Enumerations\/RequestType.swift",
       "kind": "StringLiteral",
-      "offset": 1280,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1331,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "StringLiteral",
-      "offset": 1396,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1418,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1480,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1912,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1952,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2167,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2501,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2792,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "StringLiteral",
-      "offset": 2865,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "FloatLiteral",
-      "offset": 2936,
-      "length": 3,
-      "value": "0.1"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3047,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3053,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3224,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3230,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3721,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3776,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3903,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3930,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3994,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4125,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "StringLiteral",
-      "offset": 4180,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4234,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4295,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4536,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4543,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4804,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4964,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4976,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5077,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5144,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5289,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5393,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5895,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5987,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 6154,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 6414,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 6488,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 6755,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 6810,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7049,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 7085,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 7174,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "StringLiteral",
-      "offset": 7845,
-      "length": 44,
-      "value": "\"var meta = document.createElement('meta');\""
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "StringLiteral",
-      "offset": 7900,
-      "length": 25,
-      "value": "\"meta.name = 'viewport';\""
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "StringLiteral",
-      "offset": 7936,
-      "length": 94,
-      "value": "\"meta.content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no';\""
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "StringLiteral",
-      "offset": 8041,
-      "length": 54,
-      "value": "\"var head = document.getElementsByTagName('head')[0];\""
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "StringLiteral",
-      "offset": 8106,
-      "length": 25,
-      "value": "\"head.appendChild(meta);\""
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 8254,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "StringLiteral",
-      "offset": 8513,
-      "length": 8,
-      "value": "\"closed\""
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 8590,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 8703,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 8817,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 8918,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8974,
-      "length": 2,
-      "value": "51"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8977,
-      "length": 3,
-      "value": "255"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8989,
-      "length": 2,
-      "value": "51"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8992,
-      "length": 3,
-      "value": "255"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 9003,
-      "length": 2,
-      "value": "51"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 9006,
-      "length": 3,
-      "value": "255"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 9017,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 9140,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "StringLiteral",
-      "offset": 9247,
-      "length": 13,
-      "value": "\"%PLACEMENT%\""
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "StringLiteral",
-      "offset": 9343,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 9629,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 9875,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 9938,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 9968,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 10034,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 10123,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 10164,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 10249,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Views\/BannerView.swift",
-      "kind": "StringLiteral",
-      "offset": 11512,
-      "length": 9,
-      "value": "\"#000000\""
-    },
-    {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Enumerations\/RequestType.swift",
-      "kind": "StringLiteral",
-      "offset": 153,
+      "offset": 58,
       "length": 6,
       "value": "\"POST\""
     },
     {
-      "filePath": "\/Users\/danielwinther\/Appylar\/ios-sdk\/Appylar\/Enumerations\/RequestType.swift",
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Enumerations\/RequestType.swift",
       "kind": "StringLiteral",
-      "offset": 153,
+      "offset": 58,
       "length": 6,
       "value": "\"POST\""
     }

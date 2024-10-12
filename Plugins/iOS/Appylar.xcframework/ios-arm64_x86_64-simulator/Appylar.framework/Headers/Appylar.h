@@ -1,10 +1,3 @@
-//
-//  Appylar_SDK_iOS.h
-//  Appylar SDK iOS
-//
-//  Created by 5Exceptions_Mac1 on 16/12/22.
-//
-
 #import <Foundation/Foundation.h>
 
 //! Project version number for Appylar_SDK_iOS.
