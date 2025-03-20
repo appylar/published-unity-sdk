@@ -51,7 +51,8 @@ namespace UnityEngine.AppylarSdkWrapper.Platform.Android
             string appKey,
             AdType[] adTypes,
             bool testMode,
-            AppylarInitializationListener initializationListener
+            AppylarInitializationListener initializationListener,
+            string sdkVersion
         )
         {
             string[] adTypesString = new string[adTypes.Length];
@@ -71,7 +72,14 @@ namespace UnityEngine.AppylarSdkWrapper.Platform.Android
                 new AndroidAppylarInitializationListener(initializationListener)
             );
             //Native initialize calling
-            appylarNative.CallStatic("init", m_ApplicationContext, appKey, adTypesString, testMode);
+            appylarNative.CallStatic(
+                "init",
+                m_ApplicationContext,
+                appKey,
+                adTypesString,
+                testMode,
+                "unity," + sdkVersion
+            );
         }
 
         public void SetParameter(Dictionary<string, string[]> parameters)
