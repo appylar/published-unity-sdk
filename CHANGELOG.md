@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/appylar/published-unity-sdk/compare/v1.1.0...v1.2.0) (2025-03-20)
+
+
+### Features
+
+* upgrade ios to 2.4.0 and android to 2.5.1 ([#3](https://github.com/appylar/published-unity-sdk/issues/3)) ([260d3ff](https://github.com/appylar/published-unity-sdk/commit/260d3ff338a9ef79a645dc1cd82914f1b9eb0101))
+
 # [1.1.0](https://github.com/appylar/published-unity-sdk/compare/v1.0.2...v1.1.0) (2024-10-12)
 
 
