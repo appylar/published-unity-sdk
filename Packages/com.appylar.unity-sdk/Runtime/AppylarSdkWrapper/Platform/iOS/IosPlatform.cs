@@ -65,7 +65,12 @@ namespace UnityEngine.AppylarSdkWrapper.Platform.iOS
         private static extern void setOnInterstitialShown(onInterstitialShown callBack);
 
         [DllImport("__Internal")]
-        static extern void initialize(string appKey, string adTypes, bool testMode);
+        static extern void initialize(
+            string appKey,
+            string adTypes,
+            bool testMode,
+            string platform
+        );
 
         [DllImport("__Internal")]
         private static extern void showTopBanner(string placementId);
@@ -102,7 +107,8 @@ namespace UnityEngine.AppylarSdkWrapper.Platform.iOS
             string appKey,
             AdType[] adTypes,
             bool testMode,
-            AppylarInitializationListener initializationListener
+            AppylarInitializationListener initializationListener,
+            string sdkVersion
         )
         {
             appylarInitializationListener = initializationListener;
@@ -123,7 +129,7 @@ namespace UnityEngine.AppylarSdkWrapper.Platform.iOS
                 Debug.Log("Adtype value  " + value);
             }
             string adType = string.Join(" ", adTypesString);
-            initialize(appKey, adType, true);
+            initialize(appKey, adType, testMode, "unity," + sdkVersion);
         }
 
         public void ShowBanner(

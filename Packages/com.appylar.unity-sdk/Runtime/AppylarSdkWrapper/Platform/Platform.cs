@@ -17,10 +17,17 @@ namespace UnityEngine.AppylarSdkWrapper.Platform
             string appKey,
             AdType[] adTypes,
             bool testMode,
-            AppylarInitializationListener initializationListener
+            AppylarInitializationListener initializationListener,
+            string sdkVersion
         )
         {
-            NativePlatform.Initialize(appKey, adTypes, testMode, initializationListener);
+            NativePlatform.Initialize(
+                appKey,
+                adTypes,
+                testMode,
+                initializationListener,
+                sdkVersion
+            );
         }
 
         public void ShowBanner(BannerPosition position, AppylarBannerListener bannerListener)

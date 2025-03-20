@@ -9,6 +9,7 @@ namespace UnityEngine.AppylarSdkWrapper
     /// </summary>
     public static class Appylar
     {
+        private static readonly string VERSION = "1.1.0";
         private static IPlatform s_Platform;
 
         public static bool isSupported => IsSupported();
@@ -35,7 +36,13 @@ namespace UnityEngine.AppylarSdkWrapper
             AppylarInitializationListener initializationListener
         )
         {
-            s_Platform.Initialize(appKey, adTypes, testMode, initializationListener);
+            s_Platform.Initialize(
+                appKey,
+                adTypes,
+                testMode,
+                initializationListener,
+                Appylar.VERSION
+            );
         }
 
         /// <summary>
