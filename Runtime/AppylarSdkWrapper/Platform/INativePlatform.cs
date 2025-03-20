@@ -10,7 +10,8 @@ namespace UnityEngine.AppylarSdkWrapper
             string appKey,
             AdType[] adTypes,
             bool testMode,
-            AppylarInitializationListener initializationListener
+            AppylarInitializationListener initializationListener,
+            string sdkVersion
         );
         void ShowBanner(
             BannerPosition position,

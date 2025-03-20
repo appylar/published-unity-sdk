@@ -428,6 +428,61 @@
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "webView",
+            "printedName": "webView(_:decidePolicyFor:decisionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKWebView",
+                "printedName": "WebKit.WKWebView",
+                "usr": "c:objc(cs)WKWebView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKNavigationAction",
+                "printedName": "WebKit.WKNavigationAction",
+                "usr": "c:objc(cs)WKNavigationAction"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WebKit.WKNavigationActionPolicy) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WKNavigationActionPolicy",
+                    "printedName": "WebKit.WKNavigationActionPolicy",
+                    "usr": "c:@E@WKNavigationActionPolicy"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@Appylar@objc(cs)InterstitialViewController(im)webView:decidePolicyForNavigationAction:decisionHandler:",
+            "mangledName": "$s7Appylar26InterstitialViewControllerC03webC0_15decidePolicyFor15decisionHandlerySo05WKWebC0C_So18WKNavigationActionCySo0lmG0VctF",
+            "moduleName": "Appylar",
+            "objc_name": "webView:decidePolicyForNavigationAction:decisionHandler:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -817,8 +872,31 @@
           },
           {
             "kind": "Function",
+            "name": "version",
+            "printedName": "version()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7Appylar0A7ManagerC7versionSSyFZ",
+            "mangledName": "$s7Appylar0A7ManagerC7versionSSyFZ",
+            "moduleName": "Appylar",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "initialize",
-            "printedName": "initialize(appKey:adTypes:testMode:)",
+            "printedName": "initialize(appKey:adTypes:testMode:platform:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -850,11 +928,18 @@
                 "name": "Bool",
                 "printedName": "Swift.Bool",
                 "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
               }
             ],
             "declKind": "Func",
-            "usr": "s:7Appylar0A7ManagerC10initialize6appKey7adTypes8testModeySS_SayAA6AdTypeOGSbtFZ",
-            "mangledName": "$s7Appylar0A7ManagerC10initialize6appKey7adTypes8testModeySS_SayAA6AdTypeOGSbtFZ",
+            "usr": "s:7Appylar0A7ManagerC10initialize6appKey7adTypes8testMode8platformySS_SayAA6AdTypeOGSbSStFZ",
+            "mangledName": "$s7Appylar0A7ManagerC10initialize6appKey7adTypes8testMode8platformySS_SayAA6AdTypeOGSbSStFZ",
             "moduleName": "Appylar",
             "static": true,
             "declAttributes": [
@@ -1156,356 +1241,6 @@
         "kind": "TypeDecl",
         "name": "Session",
         "printedName": "Session",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "adTypes",
-            "printedName": "adTypes",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[Appylar.AdType]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AdType",
-                    "printedName": "Appylar.AdType",
-                    "usr": "s:7Appylar6AdTypeO"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:7Appylar7SessionC7adTypesSayAA6AdTypeOGvpZ",
-            "mangledName": "$s7Appylar7SessionC7adTypesSayAA6AdTypeOGvpZ",
-            "moduleName": "Appylar",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[Appylar.AdType]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "AdType",
-                        "printedName": "Appylar.AdType",
-                        "usr": "s:7Appylar6AdTypeO"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7Appylar7SessionC7adTypesSayAA6AdTypeOGvgZ",
-                "mangledName": "$s7Appylar7SessionC7adTypesSayAA6AdTypeOGvgZ",
-                "moduleName": "Appylar",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[Appylar.AdType]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "AdType",
-                        "printedName": "Appylar.AdType",
-                        "usr": "s:7Appylar6AdTypeO"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7Appylar7SessionC7adTypesSayAA6AdTypeOGvsZ",
-                "mangledName": "$s7Appylar7SessionC7adTypesSayAA6AdTypeOGvsZ",
-                "moduleName": "Appylar",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7Appylar7SessionC7adTypesSayAA6AdTypeOGvMZ",
-                "mangledName": "$s7Appylar7SessionC7adTypesSayAA6AdTypeOGvMZ",
-                "moduleName": "Appylar",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "orientations",
-            "printedName": "orientations",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[Appylar.AdOrientation]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AdOrientation",
-                    "printedName": "Appylar.AdOrientation",
-                    "usr": "s:7Appylar13AdOrientationO"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:7Appylar7SessionC12orientationsSayAA13AdOrientationOGvpZ",
-            "mangledName": "$s7Appylar7SessionC12orientationsSayAA13AdOrientationOGvpZ",
-            "moduleName": "Appylar",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[Appylar.AdOrientation]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "AdOrientation",
-                        "printedName": "Appylar.AdOrientation",
-                        "usr": "s:7Appylar13AdOrientationO"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7Appylar7SessionC12orientationsSayAA13AdOrientationOGvgZ",
-                "mangledName": "$s7Appylar7SessionC12orientationsSayAA13AdOrientationOGvgZ",
-                "moduleName": "Appylar",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[Appylar.AdOrientation]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "AdOrientation",
-                        "printedName": "Appylar.AdOrientation",
-                        "usr": "s:7Appylar13AdOrientationO"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7Appylar7SessionC12orientationsSayAA13AdOrientationOGvsZ",
-                "mangledName": "$s7Appylar7SessionC12orientationsSayAA13AdOrientationOGvsZ",
-                "moduleName": "Appylar",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7Appylar7SessionC12orientationsSayAA13AdOrientationOGvMZ",
-                "mangledName": "$s7Appylar7SessionC12orientationsSayAA13AdOrientationOGvMZ",
-                "moduleName": "Appylar",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "isInterstitialShown",
-            "printedName": "isInterstitialShown",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:7Appylar7SessionC19isInterstitialShownSbvpZ",
-            "mangledName": "$s7Appylar7SessionC19isInterstitialShownSbvpZ",
-            "moduleName": "Appylar",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7Appylar7SessionC19isInterstitialShownSbvgZ",
-                "mangledName": "$s7Appylar7SessionC19isInterstitialShownSbvgZ",
-                "moduleName": "Appylar",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7Appylar7SessionC19isInterstitialShownSbvsZ",
-                "mangledName": "$s7Appylar7SessionC19isInterstitialShownSbvsZ",
-                "moduleName": "Appylar",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7Appylar7SessionC19isInterstitialShownSbvMZ",
-                "mangledName": "$s7Appylar7SessionC19isInterstitialShownSbvMZ",
-                "moduleName": "Appylar",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "_modify"
-              }
-            ]
-          }
-        ],
         "declKind": "Class",
         "usr": "s:7Appylar7SessionC",
         "mangledName": "$s7Appylar7SessionC",
@@ -2288,6 +2023,61 @@
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "webView",
+            "printedName": "webView(_:decidePolicyFor:decisionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKWebView",
+                "printedName": "WebKit.WKWebView",
+                "usr": "c:objc(cs)WKWebView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKNavigationAction",
+                "printedName": "WebKit.WKNavigationAction",
+                "usr": "c:objc(cs)WKNavigationAction"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WebKit.WKNavigationActionPolicy) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WKNavigationActionPolicy",
+                    "printedName": "WebKit.WKNavigationActionPolicy",
+                    "usr": "c:@E@WKNavigationActionPolicy"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@Appylar@objc(cs)BannerView(im)webView:decidePolicyForNavigationAction:decisionHandler:",
+            "mangledName": "$s7Appylar10BannerViewC03webC0_15decidePolicyFor15decisionHandlerySo05WKWebC0C_So18WKNavigationActionCySo0klF0VctF",
+            "moduleName": "Appylar",
+            "objc_name": "webView:decidePolicyForNavigationAction:decisionHandler:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -2408,8 +2198,8 @@
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Helper\/LogUtil.swift",
       "kind": "BooleanLiteral",
       "offset": 74,
-      "length": 5,
-      "value": "false"
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/ApiServices\/ApiManager.swift",
@@ -2424,6 +2214,13 @@
       "offset": 410,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Core\/AppylarManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1281,
+      "length": 2,
+      "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Enumerations\/AdOrientation.swift",
@@ -2484,65 +2281,65 @@
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Core\/Session.swift",
       "kind": "Array",
-      "offset": 273,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Core\/Session.swift",
-      "kind": "Array",
-      "offset": 331,
+      "offset": 266,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Core\/Session.swift",
       "kind": "FloatLiteral",
-      "offset": 368,
+      "offset": 303,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Core\/Session.swift",
       "kind": "IntegerLiteral",
-      "offset": 408,
+      "offset": 343,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Core\/Session.swift",
       "kind": "IntegerLiteral",
-      "offset": 436,
+      "offset": 371,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Core\/Session.swift",
-      "kind": "IntegerLiteral",
-      "offset": 486,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Core\/Session.swift",
       "kind": "BooleanLiteral",
-      "offset": 526,
+      "offset": 411,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Core\/Session.swift",
       "kind": "BooleanLiteral",
-      "offset": 569,
+      "offset": 454,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Core\/Session.swift",
       "kind": "BooleanLiteral",
-      "offset": 625,
+      "offset": 503,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Core\/Session.swift",
+      "kind": "StringLiteral",
+      "offset": 535,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Core\/Session.swift",
+      "kind": "StringLiteral",
+      "offset": 571,
+      "length": 2,
+      "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Enumerations\/AdType.swift",
@@ -2589,252 +2386,238 @@
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 189,
-      "length": 16,
-      "value": "\"\/api\/v1\/error\/\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 242,
+      "offset": 195,
       "length": 18,
       "value": "\"\/api\/v1\/session\/\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 317,
+      "offset": 270,
       "length": 7,
       "value": "\"width\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 350,
+      "offset": 303,
       "length": 9,
       "value": "\"density\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 384,
+      "offset": 337,
       "length": 8,
       "value": "\"height\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 418,
+      "offset": 371,
       "length": 9,
       "value": "\"country\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 454,
+      "offset": 407,
       "length": 10,
       "value": "\"language\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 489,
+      "offset": 442,
       "length": 9,
       "value": "\"app_key\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 522,
+      "offset": 475,
       "length": 8,
       "value": "\"app_id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 557,
+      "offset": 510,
       "length": 11,
       "value": "\"test_mode\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 599,
+      "offset": 552,
       "length": 14,
       "value": "\"orientations\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 644,
+      "offset": 597,
       "length": 15,
       "value": "\"session_token\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 694,
+      "offset": 647,
       "length": 19,
       "value": "\"rotation_interval\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 744,
+      "offset": 697,
       "length": 15,
       "value": "\"buffer_limits\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 781,
+      "offset": 734,
       "length": 5,
       "value": "\"min\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 810,
+      "offset": 763,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 851,
+      "offset": 804,
       "length": 18,
       "value": "\"extra_parameters\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 900,
+      "offset": 853,
       "length": 14,
       "value": "\"combinations\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 938,
+      "offset": 891,
       "length": 7,
       "value": "\"scale\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 968,
+      "offset": 921,
       "length": 6,
       "value": "\"type\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 999,
+      "offset": 952,
       "length": 8,
       "value": "\"result\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1028,
+      "offset": 981,
       "length": 4,
       "value": "\"ad\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1062,
+      "offset": 1015,
       "length": 13,
       "value": "\"orientation\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1103,
+      "offset": 1056,
       "length": 12,
       "value": "\"expires_at\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1138,
+      "offset": 1091,
       "length": 6,
       "value": "\"html\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1166,
+      "offset": 1119,
       "length": 5,
       "value": "\"url\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1200,
+      "offset": 1153,
       "length": 12,
       "value": "\"statusCode\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1253,
+      "offset": 1206,
       "length": 24,
       "value": "\"adRetrieveNotification\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1307,
+      "offset": 1260,
       "length": 31,
       "value": "\"You didn't provide an app key\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1373,
-      "length": 35,
-      "value": "\"You didn't provide an orientation\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 1438,
+      "offset": 1321,
       "length": 31,
       "value": "\"You didn't provide an ad type\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1531,
+      "offset": 1414,
       "length": 18,
       "value": "\"err_rate_limited\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1585,
+      "offset": 1468,
       "length": 18,
       "value": "\"err_unauthorized\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1636,
+      "offset": 1519,
       "length": 15,
       "value": "\"err_forbidden\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1674,
+      "offset": 1557,
       "length": 6,
       "value": "\"wait\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1711,
+      "offset": 1594,
       "length": 18,
       "value": "\"err_invalid_data\""
     },

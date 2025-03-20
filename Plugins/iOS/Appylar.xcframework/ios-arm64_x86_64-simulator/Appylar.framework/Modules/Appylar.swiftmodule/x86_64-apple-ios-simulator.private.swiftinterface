@@ -27,6 +27,7 @@ import _SwiftConcurrencyShims
 extension Appylar.InterstitialViewController : WebKit.WKScriptMessageHandler, SafariServices.SFSafariViewControllerDelegate {
   @_Concurrency.MainActor(unsafe) @objc dynamic open func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
   @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, createWebViewWith configuration: WebKit.WKWebViewConfiguration, for navigationAction: WebKit.WKNavigationAction, windowFeatures: WebKit.WKWindowFeatures) -> WebKit.WKWebView?
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction, decisionHandler: @escaping (WebKit.WKNavigationActionPolicy) -> Swift.Void)
 }
 @objc @_inheritsConvenienceInitializers public class Advertisement : ObjectiveC.NSObject {
   @objc override dynamic public var description: Swift.String {
@@ -41,7 +42,8 @@ extension Appylar.InterstitialViewController : WebKit.WKScriptMessageHandler, Sa
 }
 @_hasMissingDesignatedInitializers public class AppylarManager {
   public static func setEventListener(delegate: any Appylar.AppylarDelegate, bannerDelegate: (any Appylar.BannerViewDelegate)? = nil, interstitialDelegate: (any Appylar.InterstitialDelegate)? = nil)
-  public static func initialize(appKey: Swift.String, adTypes: [Appylar.AdType], testMode: Swift.Bool)
+  public static func version() -> Swift.String
+  public static func initialize(appKey: Swift.String, adTypes: [Appylar.AdType], testMode: Swift.Bool, platform: Swift.String = "")
   public static func setParameters(dict: [Swift.String : [Swift.String]?]?)
   @objc deinit
 }
@@ -55,9 +57,6 @@ public enum AdOrientation : Swift.String {
   }
 }
 @_hasMissingDesignatedInitializers public class Session {
-  public static var adTypes: [Appylar.AdType]
-  public static var orientations: [Appylar.AdOrientation]
-  public static var isInterstitialShown: Swift.Bool
   @objc deinit
 }
 public enum AdType : Swift.String {
@@ -95,6 +94,7 @@ extension Appylar.BannerView : WebKit.WKUIDelegate, WebKit.WKNavigationDelegate,
   @_Concurrency.MainActor(unsafe) @objc dynamic public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
   @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation!)
   @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, createWebViewWith configuration: WebKit.WKWebViewConfiguration, for navigationAction: WebKit.WKNavigationAction, windowFeatures: WebKit.WKWindowFeatures) -> WebKit.WKWebView?
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction, decisionHandler: @escaping (WebKit.WKNavigationActionPolicy) -> Swift.Void)
 }
 extension Appylar.AdOrientation : Swift.Equatable {}
 extension Appylar.AdOrientation : Swift.Hashable {}

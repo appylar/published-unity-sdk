@@ -11,7 +11,8 @@ namespace UnityEngine.AppylarSdkWrapper.Platform.Unsupported
             string appKey,
             AdType[] adTypes,
             bool testMode,
-            AppylarInitializationListener initializationListener
+            AppylarInitializationListener initializationListener,
+            string sdkVersion
         ) { }
 
         public void ShowBanner(
