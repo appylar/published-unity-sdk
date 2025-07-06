@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/appylar/published-unity-sdk/compare/v1.3.0...v1.3.1) (2025-07-06)
+
+
+### Bug Fixes
+
+* add missing meta files ([015e824](https://github.com/appylar/published-unity-sdk/commit/015e8249192402a5f354d138e021d2e92a692143))
+
 # [1.3.0](https://github.com/appylar/published-unity-sdk/compare/v1.2.0...v1.3.0) (2025-07-06)
 
 
