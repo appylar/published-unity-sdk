@@ -69,7 +69,7 @@ namespace UnityEngine.AppylarSdkWrapper.Platform.iOS
             string appKey,
             string adTypes,
             bool testMode,
-            string platform
+            string platform = ""
         );
 
         [DllImport("__Internal")]
@@ -248,6 +248,7 @@ namespace UnityEngine.AppylarSdkWrapper.Platform.iOS
         {
             AppylarInterstitialListener.onInterstitialClosed();
             Screen.orientation = ScreenOrientation.AutoRotation;
+            hideInterstitial();
             Debug.Log("onInterstitialClosed()");
         }
     }

@@ -354,6 +354,57 @@ SWIFT_CLASS("_TtC7Appylar26InterstitialViewController")
 @end
 
 
+
+SWIFT_EXTERN BOOL canShowAdBanner(void) SWIFT_WARN_UNUSED_RESULT;
+
+
+SWIFT_EXTERN BOOL canShowAdInterstitial(void) SWIFT_WARN_UNUSED_RESULT;
+
+
+SWIFT_EXTERN void clearBuffer(void);
+
+
+SWIFT_EXTERN void hideBanner(void);
+
+
+SWIFT_EXTERN void hideInterstitial(void);
+
+
+SWIFT_EXTERN void initialize(char const * _Nonnull appkey, char const * _Nonnull adTypes, BOOL testMode, char const * _Nonnull platform);
+
+
+SWIFT_EXTERN void setOnBannerShown(void (* _Nonnull delegate)(NSInteger));
+
+
+SWIFT_EXTERN void setOnError(void (* _Nonnull delegate)(char const * _Nonnull));
+
+
+SWIFT_EXTERN void setOnInitialized(void (* _Nonnull delegate)(void));
+
+
+SWIFT_EXTERN void setOnInterstitialClosed(void (* _Nonnull delegate)(void));
+
+
+SWIFT_EXTERN void setOnInterstitialShown(void (* _Nonnull delegate)(void));
+
+
+SWIFT_EXTERN void setOnNoBanner(void (* _Nonnull delegate)(void));
+
+
+SWIFT_EXTERN void setOnNoInterstitial(void (* _Nonnull delegate)(void));
+
+
+SWIFT_EXTERN void setParametersJSON(char const * _Nonnull dict);
+
+
+SWIFT_EXTERN void showBottomBanner(char const * _Nonnull placementString);
+
+
+SWIFT_EXTERN void showInterstitial(char const * _Nonnull placementString);
+
+
+SWIFT_EXTERN void showTopBanner(char const * _Nonnull placementString);
+
 #endif
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
@@ -717,6 +768,57 @@ SWIFT_CLASS("_TtC7Appylar26InterstitialViewController")
 - (void)webView:(WKWebView * _Nonnull)webView decidePolicyForNavigationAction:(WKNavigationAction * _Nonnull)navigationAction decisionHandler:(void (^ _Nonnull)(WKNavigationActionPolicy))decisionHandler;
 @end
 
+
+
+SWIFT_EXTERN BOOL canShowAdBanner(void) SWIFT_WARN_UNUSED_RESULT;
+
+
+SWIFT_EXTERN BOOL canShowAdInterstitial(void) SWIFT_WARN_UNUSED_RESULT;
+
+
+SWIFT_EXTERN void clearBuffer(void);
+
+
+SWIFT_EXTERN void hideBanner(void);
+
+
+SWIFT_EXTERN void hideInterstitial(void);
+
+
+SWIFT_EXTERN void initialize(char const * _Nonnull appkey, char const * _Nonnull adTypes, BOOL testMode, char const * _Nonnull platform);
+
+
+SWIFT_EXTERN void setOnBannerShown(void (* _Nonnull delegate)(NSInteger));
+
+
+SWIFT_EXTERN void setOnError(void (* _Nonnull delegate)(char const * _Nonnull));
+
+
+SWIFT_EXTERN void setOnInitialized(void (* _Nonnull delegate)(void));
+
+
+SWIFT_EXTERN void setOnInterstitialClosed(void (* _Nonnull delegate)(void));
+
+
+SWIFT_EXTERN void setOnInterstitialShown(void (* _Nonnull delegate)(void));
+
+
+SWIFT_EXTERN void setOnNoBanner(void (* _Nonnull delegate)(void));
+
+
+SWIFT_EXTERN void setOnNoInterstitial(void (* _Nonnull delegate)(void));
+
+
+SWIFT_EXTERN void setParametersJSON(char const * _Nonnull dict);
+
+
+SWIFT_EXTERN void showBottomBanner(char const * _Nonnull placementString);
+
+
+SWIFT_EXTERN void showInterstitial(char const * _Nonnull placementString);
+
+
+SWIFT_EXTERN void showTopBanner(char const * _Nonnull placementString);
 
 #endif
 #if __has_attribute(external_source_symbol)
